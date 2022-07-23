@@ -1,0 +1,20 @@
+*{
+    background-color: blueviolet;
+}
+
+.conact-form{
+    font-size: 5px;/*si aqui le colocamos los 25 pixeles se multiplica por 60 dependiendo el valor asi de va*/
+}
+/* se multiplica 25px * 9em se multiplica---es para cualquier medida*/
+
+/*es una medida relativa */
+
+.contact-form__h2 {
+    font-size: 3em; /*tamaño de la letra desde ccc a html px, cm, mm ,1em=16px*/
+    /*tipo de letra*/
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 2;/*ocupa media letra mas media letra mas la mitad se divide*/
+    font-weight: normal;/*es el grosor de la letra*/
+    color: chartreuse;/*color de letra*/
+
+}

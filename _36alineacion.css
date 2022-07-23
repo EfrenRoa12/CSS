@@ -1,0 +1,48 @@
+*{
+    font-family: unset;
+    font-weight: 100;
+    
+}
+body{
+    background: radial-gradient(circle, #fff, #bbb);
+    padding: 15px;
+}
+.grid-container {
+    display: grid; 
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    border: 3px solid #000;
+    background: #333;
+    grid-auto-flow: dense;
+    /*es para posicionarlos justify-content: space-evenly*/
+    justify-items: center;/*los centra start izquierda y end derecha
+    justify-content center end start */
+    align-items: center;/*es para centrar de arriba abajo*/
+}
+.grid-item {
+    border: 1px solid #000;
+    background: #999;
+    font-size: 30px;
+    padding: 50px;
+    
+}
+
+
+.grid-item:first-child{
+   
+}
+
+
+.grid-item:nth-child(3){
+    
+}
+
+.grid-item:nth-child(5){
+    
+}
+
+.grid-item:nth-child(7){
+    
+}

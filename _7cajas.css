@@ -1,0 +1,40 @@
+*{
+    font-family: inherit;/*tipo de letra*/
+    font-weight: 100;
+    font-size: 30px;/*tipo de letra*/
+}
+/*
+todos los elementos en linea son actualizables ya h2ya no ocupa y se comporta en linea
+*/
+h2{
+    /*display: inline;se comporta por linea ya no porbloque--- nose puede poner     heigth ni width*/
+}
+
+p{
+    /*es bloque algunos sepuede poner las propiedades algunos no*/
+    height: 400px;
+    width: 190px;
+}
+
+/*propiedades de caja con ha*/
+.caja{
+    background-color: blue;/*color de fondo de la letra segun su tamaño y espacio*/
+    display: inline-block;/*solo ocupara la caja necesario*/
+    /*padding es la distancia que hay entre el texto y la caja*/
+    /*
+    padding top arriba
+    padding bottom abajo
+    padding top left derecha
+    padding rigth izquierda
+    */
+
+    padding-top: 10px;
+    padding-bottom: 28px;
+    padding-left: 15px;
+    padding-right: 50px;
+    padding: 20px, 20px, 30px, 50px;
+
+    height: 100px;/*alto*/
+    width: 100px;/*largo*/
+
+}

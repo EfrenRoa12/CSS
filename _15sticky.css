@@ -1,0 +1,18 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 90px;
+    font-size: 20px;/*es para crear agrandar la letra*/
+
+}
+
+.caja-fixed{
+    background: rgb(50, 169, 205);
+    position: sticky;
+    opacity: 0.3;
+    top: 0;
+}
+
+.texto{
+    background: rgb(255, 0, 191);
+    
+}

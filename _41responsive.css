@@ -1,0 +1,40 @@
+*{
+    font-family: unset;
+    font-weight: 100;
+    
+}
+.div-responsive{
+    background: mediumaquamarine;
+}
+
+/*
+screen es una pantalla como minimo debe tener 400px si esto se cumple color rojo 
+cambia de color al minimo y maximo
+
+cada vex que lo agrandamos se cambia de color
+*/
+@media screen and (min-width: 400px) and (max-width: 650px){
+    .div-responsive{
+        background: red
+        /*cada que cambia de color cambia de forma
+        
+        padding */
+        
+        
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width: 1000px){
+    .div-responsive{
+        background: rgb(60, 255, 0)
+        
+    }
+}
+
+
+
+@media screen and (min-width: 1001px) and (max-width: 1500px){
+    .div-responsive{
+        background: rgb(255, 0, 157)
+    }
+}

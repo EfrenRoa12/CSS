@@ -1,0 +1,38 @@
+*{
+    font-family: unset;
+    font-weight: 100;
+    
+}
+/*es para general*/
+.grid-container{
+    background: #444;
+    /*para trabajar en areas debemos de poner display*/
+    
+    display: grid;
+    
+    /*las medidas de las filas seran de 1fr aya que son de 4 filas*/
+    grid-template-rows: 
+            [f-line]
+            150px
+            [s-line]
+            150px
+            [t-line]
+            150px
+            [c-line];/*filas*/
+    grid-template-columns: 
+    
+            150px
+            150px
+            150px;/*columnas*/
+    border: 5px solid #000;
+}
+.grid-item{
+    background: lightyellow;
+    border: 1px solid #000;
+}
+/*es el primer cuadro*/
+.grid-item:first-child{
+    background: maroon;
+    grid-row: f-line / t-line;/*fila de nombre de acuerdo con grid templates rows arriba*/
+    grid-column: 1 / 3;/*columna*/
+}

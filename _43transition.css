@@ -1,0 +1,49 @@
+*{
+    font-family: unset;
+    font-weight: 100;
+    
+}
+
+.containt{
+    
+    background: purple;
+    padding: 25px 5px;/*espacio de caja a fuera de caja*/
+}
+
+.caja{
+    height: 80px;
+    width: 80px;
+    background: red;
+    /*es la parte en que vamos a cambiar los colores especialmente*/
+    transition-property: left;
+    transition-duration: 1s;
+    position: relative;
+    margin: 20px;
+    left: 0;
+    /*lo hereda si le dimos un background esto es para darle contorno del mismo color*/
+}
+
+/*cada vezx que pasamos el mouse a la caja cambia de color*/
+
+.containt:hover >.caja{
+    left: 80%;/*es la la velocidad del movimiento 1s arriba*/
+    
+}
+
+
+.caja:first-child{
+    transition-timing-function: linear;
+}
+
+.caja:nth-child(2){
+    transition-timing-function: ease;
+}
+.caja:nth-child(3){
+    transition-timing-function: ease-in;
+}
+.caja:nth-child(4){
+    transition-timing-function: ease-out;
+}
+.caja:nth-child(5){
+    transition-timing-function: ease-in-out;
+}

@@ -1,0 +1,27 @@
+*{
+    font-family: unset;
+    font-weight: 100;
+    
+}
+
+
+:root{
+    --color-rojo: #f00;/*es la variable rojo que lo creamos*/
+}
+
+
+div{
+    padding: 30px;
+    height: 150px;
+    width: 150px;
+    /**/
+    margin: 30px;
+}
+
+.container{
+    background: var(--color-rojo);/*esta usando la variable global cualquiera lo agarra*/
+}
+
+.container-2{
+    background: rgb(16, 165, 108);
+}

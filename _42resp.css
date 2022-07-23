@@ -1,0 +1,68 @@
+*{
+    font-family: unset;
+    font-weight: 100;
+    
+}
+/*el containt es lo que hace que se acomoden las cajas grandes o pequeñas*/
+.containt{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.header, article, aside, footer{
+    padding: 20px;
+}
+.header{
+    background: rgb(121, 216, 112);
+    flex-basis: 60px;
+}
+
+.article{
+    background: palevioletred;
+    /*es cada posicion de tamaños*/
+    flex-basis: 300px;
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+
+.aside{
+    background: rgb(216, 214, 112);
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.footer{
+    background: rgb(122, 112, 216);
+    flex-grow: 1;
+}
+
+
+
+@media screen and (min-width: 900px){
+    .containt{
+        display: grid;
+        grid-template-rows: 80px 1fr 1fr 1fr 1fr 80px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /*es para agrandar el espacio de header */
+    .header{
+        grid-column: 1 / span3;/*esta ocupando el espacio de tres columnas o sea de tres cajas*/
+    }
+    .article{
+        grid-row: 2 / 6;
+        grid-column: 1 / span2;
+    }
+
+    .aside{
+        grid-row: 2 / 6;
+    }
+
+    .footer{
+        grid-row: 6 / 7;/*que inicie la 6 y termine la 7*/
+        grid-column: 1 / span 3;
+    }
+}

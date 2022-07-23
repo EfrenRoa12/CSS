@@ -1,0 +1,32 @@
+*{
+    font-family: unset;
+    font-weight: 100;
+    
+}
+
+.containt{
+    background: purple;
+    padding: 25px 5px;/*espacio de caja a fuera de caja*/
+}
+
+.caja{
+    height: 120px;
+    width: 120px;
+    background: blue;
+    margin: 20px;
+
+    /*esto es lo que hara */
+    animation-name: desplazamiento;
+    animation-duration: 3s;/*tarda 3 segundo en desplazarse*/
+}
+
+@keyframes desplazamiento{/*desplazarse es un nombre que nosotros le damos a la propiedad*/
+    from{/*son los propiedades de la caja que tiene*/
+        position: relative;
+        left: 0;
+
+    }
+    to{/*cuando termina*/
+        left: 80%;
+    }
+}

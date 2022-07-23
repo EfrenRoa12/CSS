@@ -1,0 +1,41 @@
+*{
+    font-family: unset;
+    
+}
+
+.flex-container{
+    display: flex;/*que un bloque se comvierta en flex contra display bloc */
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;/*cuando llega 120px se achica mas, se pone abajo la caja*/
+}
+
+.flex-item{
+    color: #fff;/*color letra*/
+    background: #248;/*fondo de color*/
+    margin: 5px;/*espacio de viewport exterior*/
+    height: 120px;
+    min-width: 120px;/*si es achica 120px minimo menos ya no hace nada*/
+    text-align: center;
+    flex-grow: 1;/*el espacio que sobra se reparten las cajas, las cajas se agrandas se extienden si tiene margin lo
+    respeta */
+}
+
+.orange{
+    background: chocolate;
+    /*si le pongo el flex-grow la caja se pone abajo solo seraesa caja que se agranda
+    si colocamos 2 3 4 el espacio es mas grnade lo mismp para green caja abajo*/
+    flex-basis: 300px;/*no cened apartir de 300px no baja es el limite*/
+    flex-shrink: 2;/*es importante es mayor a las anteriores*/
+    
+}
+
+/*cambiamos las propiedades*/
+.green{
+    background: rgb(80, 255, 103);
+    align-self: center;/*center end reverse depende la posicon es donde va a ser cada propiedad*/
+
+
+
+    flex: 1 0 350px;/*es lo mismo pero mas abreviado*/
+}

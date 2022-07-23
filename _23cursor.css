@@ -1,0 +1,18 @@
+*{
+    font-family: inherit;
+}
+
+.caja1{/*agregamos las propiedades de la caja con esto podemos hacermodificaciones chico o agrandar la caja*/
+    margin: 25px;
+    width: 200px;
+    height: 300px;
+    border: 2px solid orange;
+    background: rgb(0, 0, 0);/*es del 0 al 255*/
+    /*siempre hay que utilizar rgb o hexadecimal rgb red green blue*/
+    margin: 40px;
+    cursor: pointer/*al seleccionar la caja cambia el cursor de flecha a mano*/;
+}
+/*otro tipo de contenido de cursor*/
+.caja1:active{
+    cursor: row-resize;/*hay varios tipos progres  copy    Cursor:  https://www.w3schools.com/cssref/tryi...*/
+}

@@ -1,0 +1,18 @@
+*{
+    font-family: inherit;
+}
+
+.caja1{/*agregamos las propiedades de la caja con esto podemos hacermodificaciones chico o agrandar la caja*/
+    margin: 25px;
+    width: 300px;
+    height: 400px;
+}
+
+.caja1 img{
+    height: 100%;
+    width: 300px;
+    border: 2px solid orange;
+    object-fit: scale-down;/*la imagen funciona al cuadro con cover la imagen se ajusta con cuadro
+    contain se queda con la que mas le conviene y none agranda la imagen a la resolucion que debe ser
+    scale-down se queda con relsolucion chica*/
+}

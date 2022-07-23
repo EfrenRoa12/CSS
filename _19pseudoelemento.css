@@ -1,0 +1,73 @@
+*{
+    font-family: fantasy;
+}
+
+.texto{
+    padding: 20px;/*espacio ente letra y cuado*/
+}
+.texto::first-line{
+    color: hotpink;/*lo que hace es que la rimera linea se convierta en rosa */
+    font-size: 2em;
+}
+.texto::first-letter{/*a los que no son inline*/
+    color: rgb(122, 24, 24);/*lo que hace es que la rimera linea se convierta en rosa */
+    font-size: 3em;
+}
+
+/*formularios*/
+form{
+    margin: 100px auto;/*es centrarlo*/
+    display: block;
+    background: lawngreen;
+    padding: 20px;
+    width: 50%;
+}
+input{/*donde se digita los carateres*/
+    width: 100%;
+    padding: 6px;
+}
+
+/*aqui ya se aplica el pseudoelemento*/
+input::placeholder{
+    color: rgb(139, 0, 252);
+}
+
+/*selector de tipo*/
+p{
+    margin: 100px auto;/*es centrarlo*/
+    display: block;
+    background: lawngreen;
+    padding: 20px;
+    width: 50%;
+}
+p{/*donde se digita los carateres*/
+    width: 100%;
+    padding: 6px;
+}
+
+/*aqui ya se aplica el pseudoelemento*/
+p::selection{
+    color: rgb(139, 0, 252);
+}
+/*selector  de tipo before*/
+b{
+    margin: 100px auto;/*es centrarlo*/
+    display: block;
+    background: lawngreen;
+    padding: 20px;
+    width: 50%;
+}
+b{/*donde se digita los carateres*/
+    width: 100%;
+    padding: 6px;
+}
+
+/*aqui ya se aplica el pseudoelemento*/
+b::before{
+    content: "me suscribi";/*no se puede seleccionar*/
+    color: lightcoral;
+}
+b::after{
+    content: "todo tendencias";/*no se puede seleccionar*/
+    color: lightgreen;
+}

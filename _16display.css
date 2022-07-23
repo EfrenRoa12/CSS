@@ -1,0 +1,12 @@
+*{
+    background: blueviolet;
+}
+
+b{
+    width: 150px;
+    height: 150px;
+    margin: 20px;/*espacio entre cuadro y ventana*/
+    background: greenyellow;
+    border: 10px solid blue;
+    display: inline-block;/*se coloca de forma que sea fila y son modificables block*/
+}

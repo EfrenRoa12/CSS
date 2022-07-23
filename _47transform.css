@@ -1,0 +1,47 @@
+*{
+    font-family: unset;
+    font-weight: 100;
+    
+}
+.container{
+    padding: 20px 5px;
+    background: rgb(42, 165, 165);
+}
+
+.caja{
+    background:rgb(59, 185, 59);
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    display: flex;
+    color: aqua;
+
+    /*de va desplazando a la derecha  transform: translateY(100px); darle 100 es como si fuera 80px arriba
+    transform: translate(100% 100%);     x y   */
+    transform: translate(100%, 100%);
+
+    /*si es 1 el tamaño respetado si es 2 el doble y asi 3 triple de tamaño de la caja*/
+    transform: scale(3);
+
+    transition: transform 1s;
+
+    clip-path: polygon(50% 0, 0% 100%, 100% 100%);/*con clipp path generator en internet*/
+
+    /*casi no consume recursos animacion y transition en vez de left margin etc*/
+    transform: translate();
+}
+
+.caja:hover{
+    /*crece el tamaño    scale ayuda la calidad de la letra  */
+    transform: scaleX(2) translate(50px);
+
+
+    /*esta funcion va de lado deforma a deg grados*/
+
+    transform: skew(30deg)
+
+}
+
+b{
+    margin: auto;
+}

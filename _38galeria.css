@@ -1,0 +1,32 @@
+*{
+    font-family: unset;
+    font-weight: 100;
+    
+}
+.grid-container{
+    display: grid;
+    /*esto es lo que hace para ponerlo de 150 pixeles todas las imagenes*/
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 100px;
+    grid-gap: 10px;/*es darle espacio entre imagenes como margentipo asi*/
+}
+/*vamos a darle posicionamiento para que no quede espaci*/
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*se va adptando la imagen con pantalla*/
+}
+
+/*la primera imagen le vamos a dar mas tamaño de tres imagenes*/
+img:first-child{
+    grid-column: 1 / 3;
+}
+/*es seleccionar una imagen depende la posicion el numero*/
+img:nth-child(6){
+    grid-column: 2 / 4;/*la columna arranca en 2 y termine en 4*/
+    grid-row: 3 / 5;/**/
+}
+
+img:nth-child(10){
+    grid-row: span 3;/*es para que la imagen numeo 10 ocupe tres espacios de imagen*/
+}

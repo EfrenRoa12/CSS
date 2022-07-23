@@ -1,0 +1,25 @@
+.conact-form{
+    font-size: 25px;/*si aqui le colocamos los 25 pixeles se multiplica por 60 dependiendo el valor asi de va*/
+}
+/* se multiplica 25px * 9em se multiplica---es para cualquier medida*/
+
+/*es una medida relativa */
+
+.contact-form__h2 {
+    font-size: 9em; /*tamaño de la letra desde ccc a html px, cm, mm ,1em=16px*/
+/*medida relativa = se ajusta a celular tablet = responsive desing*/
+
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+*{
+    /*son los bordes de la letra */
+    padding: 0px;
+    margin: 0px;
+}
+
+.contact-forms {
+    font-size: 25px;/*tamaño de la letra*/
+    background-color: blueviolet; /*es para fondo de la letra*/
+    width: 50vw;/*------es para la mitad de la pantalla o 100 de la pantalla de la linea dpendiendo de como ponerlo*/
+    height: 50vh;/*5o de altura*/
+}

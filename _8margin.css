@@ -1,0 +1,50 @@
+*body{
+    background-color: blueviolet;
+    text-align: center;
+}
+/*
+margin-top
+margin-butom
+margin-left
+margin-rigth
+*/
+
+h2{
+    /*primero en la jerarquia*/
+    content: none;
+
+
+    display: inline-block;
+    /*distancia entre la letra y el espacio*/
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    /*es la segunda de la jerarquia*/
+    border-radius: 10px; /*la curva de las esquinas*/
+    /*border: 10px dashed-grove- double-inset-outset-ridge;*/
+
+
+    /*distancia fuera del cuadro */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    color: brown;/*color de letra*/
+    background-color: chartreuse; /*color de cuadro de entorno del cuadro*/
+    
+    /*
+    box shadow es  la sombra de la caja de la caja
+    box-shadow 1px 2px 15px 0 #ffff
+    x y tamaño desenfoque borde 0= tamaño de grososr y color
+
+    */
+    box-shadow: 1px 2px 15px 10px #000;
+    text-shadow: 1px 2px 15px #000, 1px 2px 15px #000;/*duplicamos para darle intensidad*/
+
+/*los grad de rotacion*/
+    transform: rotate(25deg);
+
+}

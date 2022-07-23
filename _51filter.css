@@ -1,0 +1,34 @@
+*{
+    font-family: unset;
+    font-weight: 100;
+    
+}
+.container{
+    filter: contrast(20);
+    background: red;/*lo que hace es que entra la imagen y como que lo arrastra como pintura
+    hay que jugar con estas cosas*/
+}
+.caja{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: red;
+    margin: 40px;
+    border-radius: 50%;/*es para que se ponga en circulo*/
+
+
+    filter: blur(10px);/*se escapa de color tipo transparente desenfoque*/
+}
+.caja:first-child{
+    animation: trasnladar 1.6s alternate infinite/*es para que vaya ida y vuelta infinitamente a 1.6 segundos*/
+}
+/*es para que funcione*/
+
+@keyframes trasnladar{
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(160px);
+    }
+}

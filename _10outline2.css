@@ -1,0 +1,23 @@
+*{
+    font-family: sans-serif;
+    background-color: cadetblue;
+    
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background: chocolate;
+    display: inline-block;/*es para que se alineen como bloques cuadrados*/
+    text-align: center;
+}
+/*hay una diferencia entre caja 1 y cja 2*/
+
+.caja1{
+    border: 5px solid red;
+}
+
+.caja3{
+    outline: 5px solid green;
+    position: relative;/*colocamos position relative para poder marcar lo rojo outline*/
+}

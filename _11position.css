@@ -1,0 +1,51 @@
+*{
+    background: rgb(175, 83, 83);
+}
+/*
+hay cuatro formas de posicionar un elemento 
+relative
+absoolute
+fixed
+sticky
+cada caja esta por encima de la otra
+caja 1
+caja2
+caja3
+caja4
+si caja 1 le colocamos position relative se coloca primero despues del 4
+*/
+div{/*es para ggeneral todas las div de htl no or clases*/
+    width: 200px;/*ancho*/
+    height: 200px;/*altura*/
+    padding: 30px;
+    margin: 30px;
+}
+.caja1{
+   
+    background: rosybrown;/*color*/
+    /*le movimos 20 px*/
+    position: relative;/*se sigue conservando el espacio */
+    top: 10px;/*arriba----se mueve 20 px hacia abajo*/
+    left: 10px;/*izquierda*/
+    right: 10px;/*derecha*/
+    bottom: 10px;/*abajo*/
+    /*
+    por defecto todo tiene un z-index 0 pero si le colocamos 1 se posiciona al frente mucho mas
+    */
+    z-index: 1;
+}
+.caja2{
+    background: rgb(29, 98, 107);
+    position: absolute;/*ya no sigue conservando el espacio */
+    top: 100px;/*arriba----se mueve 20 px hacia abajo*/
+    left: 100px;/*izquierda*/
+    right: 100px;/*derecha*/
+    bottom: 100px;/*abajo*/
+}
+.caja3{
+    background: rgb(109, 201, 5);
+    position: relative;/*ponemos por encima la caja tresa los demas*/
+}
+.caja4{
+    background: rgb(48, 66, 221);
+}

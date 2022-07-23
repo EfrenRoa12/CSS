@@ -1,0 +1,36 @@
+*{
+    font-family: unset;
+    font-weight: 100;
+    
+}
+
+div{
+    /*realizaremos las pruebas vlor por valor de la imagen ajustando etc*/
+    filter: blur(10px);/*lo desenfoca a 10px*/
+    filter:brightness(0.5);/*cuanto va a tener de brillo 2 10 50 etc*/
+    filter: contrast(3);/*contraste*/
+
+    /*diferencia entre*/
+
+
+
+}
+.img{
+    /*diferencia entre este es sombra de cuadro*/
+    box-shadow: 10px 10px 10px #000;
+
+
+    filter:brightness(4) contrast(3);/*es para esomas color o no dependemultiples colores*/
+    filter: grayscale(0);/*0 se pone su color nada sepone gris 1 igualetc o 05*/
+    filter: hue-rotate(40deg);/*100deg camia gama de coloresetc*/
+    filter: invert();/*invierte los colores 100% 5 9 88 etc o nada*/
+    filter: opacity(0.5);/*es la opacidad 0 o nada o 9 88 */
+    filter: saturate(400%);/*se satura de color */
+    filter: sepia(1);/*0 o 85% etc*/
+
+
+/*y es para imagen dentro sombras*/
+    width: 80%;
+    filter:drop-shadow(10px 10px 5px #000);/*copiamos varias veces el contorsno 10px 10px etc*/
+
+}

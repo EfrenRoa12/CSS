@@ -1,0 +1,50 @@
+div{/*es para generar todas las div de html no or clases*/
+    display: block;
+    position: absolute;
+    width: 200px;/*ancho*/
+    height: 200px;/*altura*/
+    background: yellowgreen;
+}
+div div{/*cajas chicas*/
+    height: 120px;
+    width: 120px;
+    background: yellow;
+}
+.container{/*es la posicion de la caja padre es mas grande*/
+    position: relative;/*con esto ya se esta posicionando y es para que las cajas hijo puedan posicinarse*/
+    border: 4px solid red;
+    /*margin: 50px auto; lo que hace es entrarlo*/
+    height: 450px;
+    width: 450px;
+    margin-left: 10px;
+    margin-top: 100px;
+}
+
+.caja1{
+    background: rosybrown;/*color*/
+}
+.caja2{
+    background: rgb(29, 98, 107);
+    right: 0;
+    
+}
+.caja3{
+    background: rgb(109, 201, 5);
+    right: 0;
+    bottom: 0;
+}
+.caja4{
+    background: rgb(80, 8, 76);
+    bottom: 0;
+}
+
+
+.caja5{
+    /*posicionar al centro*/
+    background: rgb(48, 66, 221);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}

@@ -1,0 +1,18 @@
+*{
+    font-family: unset;
+    background: teal;
+}
+
+div{
+    width: 45%;
+    display: inline-block;/*es para que se unen*/
+    background: grey;
+}
+h1{
+    font-size: 24px;
+}
+.caja2{
+    background: grey;
+}
+
+

@@ -1,0 +1,39 @@
+*{
+    font-family: unset;
+    
+}
+
+.flex-container{
+    display: flex;/*que un bloque se comvierta en flex contra display bloc */
+    height: 100vh;
+    flex-direction: row-reverse;/*se pone asi al reves de todo
+    row-column o colum-reverse*/
+
+}
+
+.flex-item{
+    color: #fff;/*color letra*/
+    background: #248;/*fondo de color*/
+    min-width: 120px;/*si es achica 120px minimo menos ya no hace nada*/
+    text-align: center;
+    flex-grow: 1;
+    height: 100px;
+    width: 300px;
+}
+
+.orange{
+    background: chocolate;
+    flex: 1 0 350px;
+    order: 4;/*se posiciona al final como si fuera de reversa mami*/
+    
+}
+
+/*cambiamos las propiedades*/
+.green{
+    background: rgb(80, 255, 103);
+    align-self: center;
+    
+}
+.blue{
+    order: 2;/*se coloca en segundo lugar lo que importa es el valor mas alto 2 4 8 10 5000*/
+}

@@ -1,0 +1,22 @@
+*{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.caja1{
+    width: 200px;/*ancho*/
+    height: 200px;/*largo*/
+    background: cyan;/*color de la caja*/
+    margin: auto;/*es para centrarlo en medio los costados y arriba y abajo*/
+/*
+lo que hace es ocupar el border azul un espacio extra
+*/
+    outline: 10px solid blue;
+
+}
+
+.caja2{
+    width: 200px;/*ancho*/
+    height: 200px;/*largo*/
+    background: rgb(33, 4, 66);/*color de la caja*/
+    margin: auto;/*es para centrarlo en medio costadors arriba y abajpo*/
+}

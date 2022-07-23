@@ -1,0 +1,57 @@
+*{
+font-family: 'Bebas Neue', cursive;
+font-family: 'Comforter', cursive;
+font-family: 'Comforter Brush', cursive;
+font-family: 'Corinthia', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Estonia', cursive;
+font-family: 'Lora', serif;
+font-family: 'Roboto Condensed', sans-serif;
+}
+.caja1{
+    height: 200px;
+    width: 200px;
+    background: lightpink;
+    transition: background 1s, height 1s, width 1s, border 0.5s;/*velocidad de tamaño*/
+    border: 3px solid red;
+}
+.caja1:hover{/*esta funcion es si paso para un cuadro cambia de comlor con el mause*/
+    background: lightseagreen;
+    /*al pasar el mause cambia de tamaño*/
+    height: 300px;
+    width: 300px;
+    border: 5px solid rgb(0, 255, 85);
+}
+/*cja2*/
+.caja2{
+    margin: 30px;
+    display: block;
+
+}
+.caja2:hover{/*si no esta visitado es de color rojo si esta visitadoes de color azul*/
+    color: red;
+}
+/*caja 3*/
+.caja3{
+    height: 200px;
+    width: 200px;
+    background: rgb(218, 49, 74);
+    margin: 25px;
+}
+/*cuando apretemos la caja cambia de coor
+tambien podemos colocar width heigth transition ese tipo de cosas y los segundos 
+focus casi funciona los mismo en input*/
+.caja3:active{
+    background: rgb(0, 255, 85);
+}
+
+/**/
+
+.caja4{
+    max-width: 25px;
+}
+
+.caja4 b:lang(en){
+    background: rosybrown;
+    padding: 20px;
+}

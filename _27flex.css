@@ -1,0 +1,51 @@
+*{
+    font-family: unset;
+    
+}
+
+.flex-container{
+    display: flex;/*que un bloque se comvierta en flex contra display bloc */
+    flex-direction: row-reverse;/*row es donde va la direccion ------>, colum es |, */
+    /*row-reverse;/*lo que hacees que se pone primero el naranja al ultimo
+    lo mismo colum reverse de arriba para abajode abajo para arriba*/
+
+    flex-wrap: wrap;/*lo que hace es que se ajusta al viewport se respeta el tamaño*/
+    justify-content: center;/*existeesta propiedad que acua como aling-center e el caso de los textos
+    space-betwen es separar las cajas lo mas que se pueda
+    space around es como dejarlo margin auto
+    space evnly se utiliza para que no sea como around es para que se quede como normal espacio ajustado*/
+
+    /*align-items: center;  lo que hace esque centra en la pagina 
+    align-items: center; lo que hace es que lo pone hasta el final
+    align-items: strech pero sin el heingt lo que hace es que se alarga los cuadros hacia abajo;
+    align-items: start; lo que hace es que cuando el viewport le quitamos el tamaño los cuadros pasan al centro
+    y lo mismo se van poniendo hacia abajo centrando
+    
+    align-content: center; es para que se ajuste quedando envertical lo mismo flex-end se pone abajo     wrap reverse se 
+    pne de abajo a arriba 
+    
+    align-items: baseline; de abjo a arriba 
+    */
+
+}
+
+.flex-item{
+    color: #fff;/*color letra*/
+    background: #248;/*fondo de color*/
+    margin: 5px;/*espacio de viewport exterior*/
+    height: 120px;
+    max-width: 120px;
+    width: 100%;/*se comportan como filas*/
+    flex: 1;/*lo que hace es que la ultima caja es mas grande y disminuimos la caja se ajusta el penultimi
+    lo cual permite que tambien se comporte de la misma forma ajustando al otro y al viewport*/
+}
+
+.orange{
+    background: chocolate;
+    
+}
+
+/*cambiamos las propiedades*/
+.green{
+    background: rgb(80, 255, 103);
+}

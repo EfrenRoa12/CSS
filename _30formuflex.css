@@ -1,0 +1,79 @@
+*{
+    font-family: unset;
+    font-weight: 100;
+    background: #000;
+    
+}
+
+.flex-container{
+    display: flex;/*que un bloque se comvierta en flex contra display bloc */
+    align-items: center;/*tenemos centrado verticalmente*/
+    flex-wrap: wrap;/*para que cuando hagamos resposive se pueda deslizar*/
+    justify-content: center;/*esta funcion envia formulario e imagen al centro*/
+    background: #444;/*es el color de contenido de container*/
+    margin: 50px 50px;
+}
+
+.flex-item{
+    background: rgb(202, 18, 131);/*fondo de color*/
+    
+   
+}
+.form{
+    min-width: 200px;
+    flex: 1;
+    text-align: center;
+    padding: 30px;/*espacio entre formularios y caja*/
+}
+
+/**/
+.form__input{
+    width: 400px;/*largo detamaño*/
+    padding: 7px;/*es para estar separados los espacios*/
+    margin: auto;
+    border: none;
+    border-bottom: 3px solid #5dd;
+    background: transparent;/*estlos mas actuales*/
+    /*color de la letra*/
+    color: #fff;
+}
+/*es para que brille*/
+.form__input:focus{
+    /*el fondo de texto es para hacerlo de manera que sea tipo transparente*/
+    background: linear-gradient(to bottom, transparent, #333);
+    outline: none;
+    border-bottom: 3px solid #5f9;
+}
+.form-img{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    min-width: 300px;/*es para que no se incoja*/
+}
+.img-container{
+    padding: 20px;
+    margin: auto;
+}
+.form-img img{
+    width: 50%;/*tamalño de la imagen*/
+    /*es para circulo y fondo de imagen con paddign espacion img y fondo*/
+    border-radius: 50%;
+    background: #fff;
+}
+.form-img div{
+    padding: 20px;
+}
+/*es donde escribiremos textor*/
+.form textarea{
+    min-height: 100px;
+    resize: none;/*es para que no se pueda expander*/
+}
+.img-container div{
+    text-align: center;/*se centra*/
+}
+
+/*esto es el boton de enviar*/
+.form input[type="submit"]{
+    background-color: #1c7;
+    
+}

@@ -1,0 +1,38 @@
+*{
+    font-family: unset;
+    font-weight: 100;
+    
+}
+.container{
+    padding: 20px 5px;
+    background: rgb(42, 165, 165);
+    height: 360px;
+    width: 360px;
+    margin: 40px;
+
+    /*copiamos direccion url en internet*/
+    background-image: url(https://fondosmil.com/fondo/15746.jpg);
+    background-size: 100% 360px;/*es para que la imagen tenga el tamaño real    y 360px para heigth y width
+     background-size: cover;  es para que el cuadro se ajuste si lo expandimos se ve mas original la imagen*/
+
+     background-size:contain; /*es para poner imagen pero se repite*/
+     background-repeat: no-repeat;/*ya no se pone el doble la img*/
+     background-size: cover;/*es la iman normal de cover*/
+     background-clip: content-box;/*recorta la imagen
+     desde donde se va a mostrar la imagen desde border desde padign o dedse cualquier lugar*/
+     background-origin: content-box;/*la crea le da la resolucion*/
+     border: 20px solid transparent;/*trasnparente la img de fondo*/
+
+
+     background-size: 100px;
+    background-position: left top;/*se posiciona arriba izquierda         left mzclamos con botom left y rigth
+    left top botttom rigth center---left top botttom rigth center-----no se puede left con left*/
+
+
+    background-attachment: fixed;/*la imagn queda fija y se mueve lo demas*/
+
+
+    
+    
+
+}

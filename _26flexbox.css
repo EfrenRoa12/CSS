@@ -1,0 +1,15 @@
+*{
+    font-family: unset;
+    
+}
+
+.flex-container{
+    display: flex;/*que un bloque se comvierta en flex contra display bloc */
+}
+
+.flex-item{
+    color: #fff;/*color letra*/
+    background: #248;/*fondo de color*/
+    padding: 10px;/*es para espacio letra */
+    margin: 10px;/*espacio de viewport exterior*/
+}

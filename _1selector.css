@@ -1,0 +1,43 @@
+
+/*
+selector{
+    propiedad: valor;
+}
+selector---es agarrar clase etc id 
+propiedad--posicion tamaño color texto borde sombra
+valor-----
+*/
+
+*{ /*es una propiedad universal que funciona modifica todo de color rojo*/
+    color: brown;
+}
+
+/*h2 por el tipo ya sea button input h2 etc*/
+h2{
+    color: blue;
+}
+
+/*seleccionar elemento por clases le colocamos el punto mas el nombre de la clase de h2 en html*/
+.clase{
+    color: palevioletred;
+}
+
+/*por id-element secoloca # primero seguido de id su nombre*/
+#id-element{
+    color: rebeccapurple;
+}
+
+/*por atributo le colocamos cualquier nombre ejemplo atributo o pudimo poner jajaja*/
+[atributo="sii"]{
+    color: saddlebrown;
+}
+
+/*descendiente de h3 a p*/
+h2 p{
+    color: springgreen;
+}
+
+/*pseudo-clases cuando pasmos el mause cambia de color negro*/
+.hov b:hover{
+    color: black;
+}

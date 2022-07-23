@@ -1,0 +1,43 @@
+*{
+    font-family: unset;
+    font-weight: 100;
+    
+}
+
+.containt{
+    background: purple;
+    padding: 20px 5px;/*espacio de caja a fuera de caja*/
+}
+
+.caja{
+    background: blue;
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    /*esto es lo que hara */
+    animation-name: desplazamiento;
+    animation-duration: 3s;/*tarda 3 segundo en desplazarse*/
+    animation-iteration-count: infinite;/*que se repita muchas veces*/
+    position: relative;
+
+    /*cambiamos la direccion en donde se desplaza */
+    animation-direction: reverse ;/*reverse --  alternite ir y volver*/
+
+    animation-fill-mode: none;/*define como va a que dad----none vuelve a la normalidad 
+                        bacjware elemento obtendra el estilo definido*/
+}
+
+@keyframes desplazamiento{/*desplazarse es un nombre que nosotros le damos a la propiedad*/
+    0%{/*son los propiedades de la caja que tiene*/
+        left: 0%;
+        background: rgb(44, 155, 136);
+    }
+    50%{/*cuando termina*/
+        background: red;
+    }
+
+    100%{/*cuando termina*/
+        left: 80%;
+        background: forestgreen;
+    }
+}

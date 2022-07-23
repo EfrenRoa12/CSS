@@ -1,0 +1,29 @@
+*{
+    font-family: unset;
+    font-weight: 100;
+    
+}
+body{
+    background: radial-gradient(circle, #fff, #bbb);
+    padding: 15px;/*borde fuera de la caja*/
+}
+.grid-container {
+    display: grid; 
+    /*lo que hace 1fr es que sea dinamico el ultimo agrandamos  o no*/
+    /*fit en lugar de fill sigue generando filascon fill*/
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));/*sin coma cantidad de pixeles y solo va a ser dos filas que se modifican*/
+
+    grid-auto-rows: repeat(3, 100px);
+    grid-auto-rows: 1fr;/*es para crear la fila ------- sile rows y column falta practicar muchoi*/
+    grid-auto-columns: 1fr;/*se coloca como columna*/
+
+    /*es para darle pixeles al rededor de la caja*/
+    border: 3px solid #000;
+    background: #333;
+    grid-auto-flow: dense;/*es para rellenar huecos*/
+}
+.grid-item {
+    border: 1px solid #000;/*es el contorno de lacaja chicos*/
+    background: #999;
+    
+}
